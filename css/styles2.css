@@ -1,0 +1,109 @@
+.info_contentbox3image {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.info_contentbox3image img{
+  width:80%;
+}
+
+.info_contentbox3 {
+  grid-template-rows: 1fr 1fr;
+}
+.info_contentbox2 {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.info_contentbox1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.info_contentbox1text {
+  display: grid;
+  place-items: center;
+  font-size: 50px;
+}
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+.container nav {
+  width: min(1200px, 92%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+.subheader {
+  display: grid;
+  font-size: 50px;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+.nav {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  padding: 0.9rem 0;
+}
+.nav-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+  align-content: center;
+}
+body {
+  padding: 20px;
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(
+      1200px 700px at 80% -10%,
+      rgba(69, 163, 255, 0.1),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at -10% 10%,
+      rgba(0, 255, 198, 0.08),
+      transparent 60%
+    ),
+    var(--bg);
+  line-height: 1.5;
+}
+
+:root {
+  --bg: #0b0f12;
+  --bg-elev: #0f151a;
+  --text: #e6f7ff;
+  --muted: #9bb7c5;
+  --primary: #00ffc6;
+  --secondary: #45a3ff;
+  --accent: #78ff54;
+  --danger: #ff4d6d;
+  --card: #0e151a;
+  --border: #15232d;
+  --glow: 0 0 24px rgba(0, 255, 198, 0.25), 0 0 48px rgba(69, 163, 255, 0.15);
+  --radius: 14px;
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: saturate(140%) blur(8px);
+  background: rgba(11, 15, 18, 0.6);
+  border-bottom: 1px solid rgba(21, 35, 45, 0.6);
+}
